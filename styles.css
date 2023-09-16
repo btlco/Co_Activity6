@@ -1,0 +1,42 @@
+h1 {
+    color: black;
+    background: aqua
+}
+
+
+
+.flex-container {
+    display: flex;
+    background: violet;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.flex-item {
+    display: flex;
+    padding: 20px;
+    margin: 20px;
+    background: yellow;
+    border: 6px solid blue;
+}
+
+/* Media Section  */
+@media screen and (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+
+    .flex-container {
+        display: row;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .flex-item {
+        font: size 30px;
+    }
+}
